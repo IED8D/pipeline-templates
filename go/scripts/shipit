@@ -69,7 +69,8 @@ echo "v${VERSION}"                         > ${RELEASE_ROOT}/tag
 echo "${RELEASE_NAME} v${VERSION}"         > ${RELEASE_ROOT}/name
 mv ${REPO_ROOT}/ci/release_notes.md          ${RELEASE_ROOT}/notes.md
 mv ${REPO_ROOT}/artifacts                    ${RELEASE_ROOT}/artifacts
-
+ls ${REPO_ROOT}/artifacts -al
+ls  ${RELEASE_ROOT}/artifacts -al 
 cat > ${RELEASE_ROOT}/notification <<EOF
 <!here> New ${RELEASE_NAME} v${VERSION} released!
 EOF
